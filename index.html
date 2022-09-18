@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+      body{
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      fieldset{
+         display: flex;
+         padding: 10px;
+         flex-direction: column;
+      }
+      legend{
+         font-size: 24px;
+         font-weight: 600;
+      }
+      h3{
+         font-weight: 500;
+      }
+      #buttonSubmit{
+         max-width: 100px;
+         padding: 5px 10px;
+         margin-top: 15px;
+      }
+      .container-input{
+         display: flex;
+         flex-direction: column;
+         gap: 10px;
+         color: rgba(0, 0, 0, 0.4);
+      }
+      .container-input input{
+         width: 200px;
+         border-radius: 5px;
+         padding: 7px;
+         border: 1px solid #131316;
+         font-size: 16px;
+      }
+      .container-input label{
+         font-weight: 700;
+         font-size: 18px;
+      }
+   </style>
+   <script defer src="script.js"></script>
+   <title>Document</title>
+</head>
+<body>
+   <fieldset id="fieldset1">
+      <legend>Insert data</legend>
+         <div class="container-input">
+            <input id="userFirstNameIn" type="text" name="First name:" autocomplete="off" placeholder="Enter your first name...">
+
+            <input id="userSecondNameIn"  type="text" name="Second name:" autocomplete="off" placeholder="Enter your second name...">
+
+            <input id="userAgeIn" type="number" name="Age:" placeholder="Enter your age...">
+         </div>
+         <input id="buttonSubmit" type="submit" value="Submit">
+   </fieldset>
+   <fieldset id="fieldset2">
+      <legend>Local Storage</legend>
+   </fieldset>
+</body>
+</html>
